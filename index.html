@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+
+<style type="text/css">
+	.init{margin: 20px; 
+		padding: 10px; 
+		border-style: solid;
+		background-color:lightcyan;
+		border-radius: 0px;
+		font-family: verdana;
+		font-size: 20px;
+	}
+    
+    .header {
+      display: flex;
+      color: red;
+      align-items: center;
+      border-radius: 8px;
+      /*box-shadow: 0 0 8px;*/
+    }
+    .logo {
+      flex: 0,8;
+      text-align: center;
+    }
+    .logo img {
+      max-height: 120px;
+    }
+    .title {
+      flex: 3;
+      font-size: 30px;
+      font-weight: bold;
+      color:red;
+      text-align: center;
+    }
+
+	 /* Định dạng cho thanh menu */
+        nav {
+            background-color: orange;
+            overflow: hidden;
+            margin: 20px;
+            justify-content: center;
+            display: flex;
+            /*justify-content: space-between; */ /* Giãn đều nhau */
+            /*flex-grow: 1; */
+        }
+            
+
+    /* Định dạng cho các liên kết trong menu */
+        nav a {
+            float: left;
+            display: block;
+            color: yellow;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+    /* Hiệu ứng khi di chuột vào liên kết trong menu */
+        nav a:hover {
+            background-color: yellow;
+            color: red;
+        }
+
+	/* Định dạng menu con */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: yellow;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lightskyblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* CSS link trong menu con */
+        .dropdown-content a {
+            float: none;
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+	/* Hiệu ứng khi di chuột vào liên kết trong menu */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: red;
+            background-color: yellow;
+            color: red;
+        }
+		
+	   .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    .main {margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 20px; /* Giãn khoảng cách giữa các ô */
+    }
+
+    .box {
+      flex: 1 1 calc(50% - 30px);
+      padding: 10px;
+      border: 1px solid;
+      box-sizing: border-box;
+      background-color: lightyellow;
+    }
+
+    /* Chân trang */
+    .footer{color: violet;
+		border-radius: 10px;
+		padding: 20px;
+	}
+	
+    h1{color: red; font-family:tomaha;}
+</style>
+
+<body>
+
+<div class="init header">
+  <div class="logo">
+     <img src="logo.jpg" alt="Err" style="width: 25%; height: auto;">   
+  </div>
+  <div class="title">
+    TẾT SUM VẦY
+  </div>
+</div>
+
+	
+<!-- Thanh menu -->
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a> 
+      
+        <!-- Menu Dịch vụ có menu con -->
+        <div class="dropdown">
+            <button class="dropbtn">Lựa chọn</button>
+            <div class="dropdown-content">
+                <a href="#sub1"> Mục 1 </a>
+                <a href="#sub2"> Mục 1 </a>
+                <a href="#sub3"> Mục 1 </a>
+                
+            </div>
+        </div>
+        <a href="#contact">Liên hệ</a>
+        <a href="thanhvien.html" target="_blank">Về chúng tôi</a>
+        <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+    </nav>
+
+		
+	<div class="main">
+	
+        <div class="box">
+            <h1> TẾT ĐOÀN VIÊN</h1>
+            <table>
+            <tr style="font-style: italic;"> <td width="300">    
+           Tết đoàn viên của Việt Nam là dịp lễ truyền thống mang ý nghĩa đặc biệt, gắn liền với tình cảm gia đình và cội nguồn dân tộc. Khi năm cũ khép lại, Tết là khoảng thời gian để mỗi người tạm gác những lo toan, nhìn lại chặng đường đã qua và hướng tới một khởi đầu mới. Trong không khí rộn ràng đầu xuân, sự sum họp bên mâm cơm gia đình, những lời chúc giản dị và tiếng cười ấm áp đã làm nên giá trị thiêng liêng của Tết. Không chỉ đánh dấu sự đổi mới của thời gian, Tết đoàn viên còn là dịp gắn kết yêu thương và gìn giữ những truyền thống tốt đẹp của dân tộc Việt Nam. 🌸🧧 <br>            
+                     
+            </td>
+        </tr>
+            <img src="trang-tri-tet.jpg" alt="Err" style="width: 75%; height: auto;">   
+            
+      
+    </table>
+            <p style="color: red;"> <em>"Bận cả năm rồi, Tết về nhà cho ấm áp thôi mọi người ơi.”</em>
+        </div>
+        <div class="box">
+            <h1> MÂM CỔ NGÀY TẾT </h1>
+          <img src="tetsumvay.jpg" alt="Err" style="width: 75%; height: auto;">
+           <img src="cotet.jpg" alt="Err" style="width: 75%; height: auto;">
+           
+           
+        </div>
+        <div class="box">
+            <h1>ÂM NHẠC NGÀY TẾT 💗 </h1>
+           <p> <audio src="tetnayconseve.mp3"controls></audio> </p>
+        </div>
+        <div class="box">
+            <h1>VỀ NHÀ ĂN TẾT THÔI!!!</h1>
+            <p><video src="venhaantet.mp4" controls width="500" height="200"></video> </p>
+        </div>
+	</div>
+	   
+    <div class="init" style="background-color:lightskyblue; box-shadow: 0 0 8px;">
+    <p><em> CHÚC BẠN CÓ MỘT CÁI TẾT THẬT ẤM ÁP VÀ NHIỀU NIỀM VUI BÊN GIA ĐÌNH💗</em> </p>
+    </div>
+
+	<div class="init footer"> 
+		<div style="color: red;"> ©️ TÁC GIẢ: Nguyễn Thị Diệu Oanh 💗 </div>
+		<div style="color: blue;"> 📧 Địa chỉ: Lớp 12A3 - THPT NBK - Gia Lai </div>
+        <div style="color: violet;"> 📧 Email: dieuanh.14102008cs@gmail.com </div>
+
+	</div>
+</body>
+</html>
